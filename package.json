@@ -1,19 +1,15 @@
 {
-  "name": "client",
+  "name": "monorepo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "packageManager": "pnpm@8.5.1",
   "scripts": {
-    "start": "next dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "pnpm --filter client",
+    "admin": "pnpm --filter admin",
+    "common": "pnpm --filter common"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "pnpm": "^8.6.12"
-  },
-  "dependencies": {
-    "next": "^13.4.13"
-  }
+  "license": "ISC"
 }
